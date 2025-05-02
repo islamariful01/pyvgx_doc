@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="CAP v${cap.version}">
+    <bannerLeft>
+        <name>CAP v${cap.version} Documentation</name>
+    </bannerLeft>
+    <version position="none" />
+    <body>
+        <menu name="Resources">
+            <item name="Documentation" href="asciidoc/index.html" />
+        </menu>
+    </body>
+    <skin>
+        <groupId>org.apache.maven.skins</groupId>
+        <artifactId>maven-fluido-skin</artifactId>
+        <version>1.12.0</version>
+    </skin>
+</project>
