@@ -28,7 +28,7 @@ jobs:
         id: adocbuild
         uses: tonynv/asciidoctor-action@master
         with:
-            program: "asciidoctor -D docs --backend=html5 -o index.html README.adoc && echo 'docs.upsilonproject.io' > docs/CNAME"      
+            program: "asciidoctor -D docs --backend=html5 -o index.html && echo 'docs.upsilonproject.io' > docs/CNAME"      
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
