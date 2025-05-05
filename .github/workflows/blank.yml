@@ -71,6 +71,7 @@ jobs:
             echo "Done processing tag: $TAG"
             echo "=================================="
           done
+          ls -la ./target
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload static files as artifact
@@ -78,7 +79,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload generated docs
-          path: './target/3.5/generated-docs'
+          path: './target/3.4/generated-docs'
 
   # Deployment job
   deploy:
