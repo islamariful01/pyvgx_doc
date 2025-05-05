@@ -62,6 +62,8 @@ jobs:
             echo "=================================="
             echo "Checking out tag: $TAG"
             git checkout "$TAG"
+          
+            ls -la
 
             echo "Running some command for tag: $TAG"
             mvn --batch-mode --update-snapshots site -Dcap.version="$TAG"
